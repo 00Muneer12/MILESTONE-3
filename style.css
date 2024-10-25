@@ -74,13 +74,16 @@ textarea {
    margin-top: 30px;
    padding: 20px;
    background-color: #f9f9f9;
-   border: 1px solid #ddd;
+   border: 1px solid #8cc1ec;
    border-radius: 10px;
+   background-color: azure;
    display: none; /* Initially hidden */
+   /* now resume editable*/
+   outline: none;
 }
 
 #resumeOutput h2 {
-   color: #333;
+   color: #050505b9;
 }
 
 #resumeOutput p {

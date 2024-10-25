@@ -18,13 +18,13 @@ resumeForm.addEventListener("submit", function(event) {
 
     // Generate the resume below the form
     resumeOutput.innerHTML = `
-        <h2>Your Resume</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Education:</strong><br>${education.replace(/\n/g, '<br>')}</p>
-        <p><strong>Experience:</strong><br>${experience.replace(/\n/g, '<br>')}</p>
-        <p><strong>Skills:</strong><br>${skills.replace(/\n/g, '<br>')}</p>
+        <h2> <b> Editable Resume <b> </h2>
+        <p><strong>Name:</strong> <span contenteditable="true"> ${name} </span> </p>
+        <p><strong>Email:</strong> <span contenteditable="true"> ${email}  </span> </p>
+        <p><strong>Phone:</strong> <span contenteditable="true"> ${phone}  </span> </p>
+        <p contenteditable="true"><strong>Education:</strong><br>${education.replace(/\n/g, '<br>')}</p>
+        <p contenteditable="true"><strong>Experience:</strong><br>${experience.replace(/\n/g, '<br>')}</p>
+        <p contenteditable="true"><strong>Skills:</strong><br>${skills.replace(/\n/g, '<br>')}</p>
     `;
 
     // Show the resume output section

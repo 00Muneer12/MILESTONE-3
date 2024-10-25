@@ -13,7 +13,7 @@ resumeForm.addEventListener("submit", function (event) {
     // Clear previous resume output
     resumeOutput.innerHTML = '';
     // Generate the resume below the form
-    resumeOutput.innerHTML = "\n        <h2>Your Resume</h2>\n        <p><strong>Name:</strong> ".concat(name, "</p>\n        <p><strong>Email:</strong> ").concat(email, "</p>\n        <p><strong>Phone:</strong> ").concat(phone, "</p>\n        <p><strong>Education:</strong><br>").concat(education.replace(/\n/g, '<br>'), "</p>\n        <p><strong>Experience:</strong><br>").concat(experience.replace(/\n/g, '<br>'), "</p>\n        <p><strong>Skills:</strong><br>").concat(skills.replace(/\n/g, '<br>'), "</p>\n    ");
+    resumeOutput.innerHTML = "\n        <h2> <b> Editable Resume <b> </h2>\n        <p><strong>Name:</strong> <span contenteditable=\"true\"> ".concat(name, " </span> </p>\n        <p><strong>Email:</strong> <span contenteditable=\"true\"> ").concat(email, "  </span> </p>\n        <p><strong>Phone:</strong> <span contenteditable=\"true\"> ").concat(phone, "  </span> </p>\n        <p contenteditable=\"true\"><strong>Education:</strong><br>").concat(education.replace(/\n/g, '<br>'), "</p>\n        <p contenteditable=\"true\"><strong>Experience:</strong><br>").concat(experience.replace(/\n/g, '<br>'), "</p>\n        <p contenteditable=\"true\"><strong>Skills:</strong><br>").concat(skills.replace(/\n/g, '<br>'), "</p>\n    ");
     // Show the resume output section
     resumeOutput.style.display = 'block';
 });
